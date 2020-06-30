@@ -1,0 +1,8 @@
+
+#folder build
+x64/
+build/
+debug/
+vs/
+*.user
+*.db
