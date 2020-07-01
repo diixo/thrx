@@ -16,6 +16,10 @@ elseif (UNIX OR CMAKE_COMPILER_IS_GNUCXX) # Clang OR Gcc (Linux, Mac OS or Win32
     endif (APPLE)
 endif ()
 
+set (SOURCE_THRX "")
+
+set (lib_thrx "")
+
 # Command to output information to the console
 # Useful for displaying errors, warnings, and debugging
 message ("cxx Flags: " ${CMAKE_CXX_FLAGS})

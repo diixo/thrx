@@ -1,5 +1,5 @@
 
-set (SOURCE_THRX 
+LIST (APPEND SOURCE_THRX 
    TOutput.cpp 
 )
 
@@ -8,4 +8,3 @@ add_subdirectory (agent)
 add_subdirectory (concurrency)
 add_subdirectory (windows)
 add_subdirectory (test)
-

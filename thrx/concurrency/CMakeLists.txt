@@ -1,6 +1,5 @@
 
-set (SOURCE_THRX 
-   ${SOURCE_THRX}
+LIST (APPEND SOURCE_THRX 
    Monitor.cpp 
    Mutex.cpp 
    Thread.cpp 

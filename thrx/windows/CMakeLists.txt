@@ -1,5 +1,4 @@
 
-set (SOURCE_THRX 
-   ${SOURCE_THRX}
+LIST (APPEND SOURCE_THRX 
    GetTimeOfDay.cpp 
 )
