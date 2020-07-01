@@ -3,6 +3,7 @@
 x64/
 build/
 debug/
-vs/
+.vs/
 *.user
+*.vc.db
 *~
