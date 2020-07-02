@@ -189,6 +189,7 @@
     <ClInclude Include="..\TProcessor.h" />
     <ClInclude Include="..\transport\TTransport.h" />
     <ClInclude Include="..\transport\TTransportException.h" />
+    <ClInclude Include="..\transport\TVirtualTransport.h" />
     <ClInclude Include="..\TToString.h" />
     <ClInclude Include="..\windows\Config.h" />
     <ClInclude Include="..\windows\GetTimeOfDay.h" />
