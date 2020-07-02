@@ -43,7 +43,7 @@ int thrx_gettimeofday(struct timeval* tv, struct timezone* tz) {
 #include <cstdint>
 #include <sstream>
 
-//#include "../transport/TTransportException.h"
+#include "../transport/TTransportException.h"
 
 // This code started from a "FREE implementation" posted to Stack Overflow at:
 // https://stackoverflow.com/questions/10905892/equivalent-of-gettimeday-for-windows
@@ -70,8 +70,8 @@ int thrx_gettimeofday(struct timeval * tp, struct timezone * tzp)
       std::stringstream ss;
       ss << "SystemTimeToFileTime failed: 0x" << std::hex << lastError;
       
-      //using thrx::transport::TTransportException;
-      //throw TTransportException(TTransportException::INTERNAL_ERROR, ss.str());
+      using thrx::transport::TTransportException;
+      throw TTransportException(TTransportException::INTERNAL_ERROR, ss.str());
       assert(false);
     }
     time =  static_cast<uint64_t>(file_time.dwLowDateTime )      ;
