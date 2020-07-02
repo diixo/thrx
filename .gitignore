@@ -5,5 +5,5 @@ build/
 debug/
 .vs/
 *.user
-*.vc.db
+*.vc.*db
 *~

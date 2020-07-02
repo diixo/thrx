@@ -144,18 +144,30 @@
   <ItemGroup>
     <ClCompile Include="..\agent\src\XMLreader.cpp" />
     <ClCompile Include="..\agent\tests\XMLreaderTests.cpp" />
+    <ClCompile Include="..\async\TAsyncChannel.cpp" />
+    <ClCompile Include="..\async\TAsyncProtocolProcessor.cpp" />
+    <ClCompile Include="..\async\TConcurrentClientSyncInfo.cpp" />
     <ClCompile Include="..\concurrency\Monitor.cpp" />
     <ClCompile Include="..\concurrency\Mutex.cpp" />
     <ClCompile Include="..\concurrency\Thread.cpp" />
     <ClCompile Include="..\concurrency\ThreadFactory.cpp" />
     <ClCompile Include="..\concurrency\ThreadManager.cpp" />
     <ClCompile Include="..\concurrency\TimerManager.cpp" />
+    <ClCompile Include="..\protocol\TProtocol.cpp" />
+    <ClCompile Include="..\TApplicationException.cpp" />
     <ClCompile Include="..\TOutput.cpp" />
+    <ClCompile Include="..\transport\TTransportException.cpp" />
     <ClCompile Include="..\windows\GetTimeOfDay.cpp" />
     <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\agent\XMLreader.h" />
+    <ClInclude Include="..\async\TAsyncBufferProcessor.h" />
+    <ClInclude Include="..\async\TAsyncChannel.h" />
+    <ClInclude Include="..\async\TAsyncDispatchProcessor.h" />
+    <ClInclude Include="..\async\TAsyncProcessor.h" />
+    <ClInclude Include="..\async\TAsyncProtocolProcessor.h" />
+    <ClInclude Include="..\async\TConcurrentClientSyncInfo.h" />
     <ClInclude Include="..\concurrency\Exception.h" />
     <ClInclude Include="..\concurrency\FunctionRunner.h" />
     <ClInclude Include="..\concurrency\Monitor.h" />
@@ -166,11 +178,17 @@
     <ClInclude Include="..\concurrency\TimerManager.h" />
     <ClInclude Include="..\NonCopyable.h" />
     <ClInclude Include="..\PlatformSocket.h" />
+    <ClInclude Include="..\protocol\TProtocol.h" />
+    <ClInclude Include="..\protocol\TProtocolException.h" />
+    <ClInclude Include="..\TApplicationException.h" />
     <ClInclude Include="..\Thrx-config.h" />
     <ClInclude Include="..\Thrx.h" />
     <ClInclude Include="..\Thrx_export.h" />
     <ClInclude Include="..\TLogging.h" />
     <ClInclude Include="..\TOutput.h" />
+    <ClInclude Include="..\TProcessor.h" />
+    <ClInclude Include="..\transport\TTransport.h" />
+    <ClInclude Include="..\transport\TTransportException.h" />
     <ClInclude Include="..\TToString.h" />
     <ClInclude Include="..\windows\Config.h" />
     <ClInclude Include="..\windows\GetTimeOfDay.h" />
