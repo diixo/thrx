@@ -72,7 +72,6 @@ int thrx_gettimeofday(struct timeval * tp, struct timezone * tzp)
       
       using thrx::transport::TTransportException;
       throw TTransportException(TTransportException::INTERNAL_ERROR, ss.str());
-      assert(false);
     }
     time =  static_cast<uint64_t>(file_time.dwLowDateTime )      ;
     time += static_cast<uint64_t>(file_time.dwHighDateTime) << 32;
