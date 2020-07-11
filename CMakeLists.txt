@@ -6,7 +6,7 @@ project (thrx-vs2015)
 # Set compiler flags and options. 
 if (MSVC) # MSVC compiler (Win32 only)
     # Display more warnings
-    set (CMAKE_CXX_FLAGS "/W3")
+    set (CMAKE_CXX_FLAGS "/W3 /nologo /EHsc")
 elseif (UNIX OR CMAKE_COMPILER_IS_GNUCXX) # Clang OR Gcc (Linux, Mac OS or Win32 with MingW)
     # Enable C++11 and displays all warnings
     set (CMAKE_CXX_FLAGS "-Wall -std=c++11")
@@ -29,4 +29,4 @@ add_subdirectory (thrx)
 
 # Set include-directory
 # include_directories(${INCLUDE_DIRS})
-#include_directories(thrx)
+include_directories(thrx)
