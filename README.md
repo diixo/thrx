@@ -1,6 +1,6 @@
 Thrx-library
 ===================
-!!!.
+Communication library, that implemented threads interaction.
 
 License and Copyright
 ---------------------
