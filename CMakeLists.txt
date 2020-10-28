@@ -25,8 +25,8 @@ set (lib_thrx "")
 message ("cxx Flags: " ${CMAKE_CXX_FLAGS})
 
 # Sub-directories where more CMakeLists.txt exist
-add_subdirectory (thrx)
+add_subdirectory (src)
 
 # Set include-directory
 # include_directories(${INCLUDE_DIRS})
-include_directories(thrx)
+include_directories (src)
